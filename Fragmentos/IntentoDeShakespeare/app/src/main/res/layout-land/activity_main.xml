@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Linear layout para no tener que definir los elementos, ya ocupan la pantalla completa-->
+<!-- Para crear el layout horizontal hay que ir a vista del proyecto> Proyect. en la carpeta res se
+crea layout-land, y dentro de crea este acctivity que tiene el diseño en horiontal-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!-- Para bloquear este layout en horizontal-->
+
+    <!-- Creacion de dos fragmentos-->
+    <FrameLayout
+        android:id="@+id/frameLayoutMaster"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/frameLayoutDetail"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+</LinearLayout>
